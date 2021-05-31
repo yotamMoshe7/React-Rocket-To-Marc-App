@@ -1,0 +1,57 @@
+.text-image-wrapper {
+  display: grid;
+  grid-template-columns: 20% 40% 30% 10%;
+  font-family: 'Pattaya', sans-serif;
+}
+
+.title {
+  font-size: 45px;
+  color: rgb(111, 155, 184);
+}
+
+.message {
+  font-size: 30px;
+  color: white;
+}
+
+.hero-image {
+  width: 200px;
+}
+
+@media only screen and (max-width: 950px) {
+  .text-image-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pattaya', sans-serif;
+  }
+
+  .text-wrapper {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 50px;
+    color: rgb(111, 155, 184);
+    text-align: center;
+  }
+
+  .message {
+    width: 80%;
+    text-align: center;
+  }
+
+  .hero-image-wrapper {
+    margin-top: 10px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 280px;
+  }
+}
